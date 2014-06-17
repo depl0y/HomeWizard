@@ -89,6 +89,7 @@ class Api: NSObject {
 			println(responseObject.description)
 			var dict: NSDictionary = responseObject as NSDictionary
 
+			
 
 			if (dict.objectForKey("error")) {
 				completed(success: false)

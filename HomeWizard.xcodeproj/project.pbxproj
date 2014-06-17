@@ -8,16 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		AB0DEDFC1950104F007D149C /* HomeWizard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AB0DEDFA1950104F007D149C /* HomeWizard.xcdatamodeld */; };
-		AB0DEE10195047FD007D149C /* HomeWizard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0DEE0F195047FD007D149C /* HomeWizard.swift */; };
-		AB0DEE1219505529007D149C /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0DEE1119505529007D149C /* Base.swift */; };
-		AB0DEE1419506ED5007D149C /* Switch.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0DEE1319506ED5007D149C /* Switch.swift */; };
-		AB0DEE1619507141007D149C /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0DEE1519507141007D149C /* Room.swift */; };
 		AB0DEE19195072B2007D149C /* Switch.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0DEE18195072B2007D149C /* Switch.swift */; };
 		AB0DEE1B195074EC007D149C /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0DEE1A195074EC007D149C /* Base.swift */; };
-		AB0DEE1D19507D74007D149C /* Dimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0DEE1C19507D74007D149C /* Dimmer.swift */; };
 		AB0DEE1F19507DCC007D149C /* Dimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0DEE1E19507DCC007D149C /* Dimmer.swift */; };
-		AB0DEE2119507FEA007D149C /* Hue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0DEE2019507FEA007D149C /* Hue.swift */; };
 		AB0DEE23195080D3007D149C /* Hue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0DEE22195080D3007D149C /* Hue.swift */; };
+		AB0DEE2519509F38007D149C /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0DEE2419509F38007D149C /* Parser.swift */; };
+		AB0DEE2E1950A22C007D149C /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0DEE271950A22C007D149C /* Base.swift */; };
+		AB0DEE2F1950A22C007D149C /* Dimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0DEE281950A22C007D149C /* Dimmer.swift */; };
+		AB0DEE301950A22C007D149C /* HomeWizard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0DEE2A1950A22C007D149C /* HomeWizard.swift */; };
+		AB0DEE311950A22C007D149C /* Hue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0DEE2B1950A22C007D149C /* Hue.swift */; };
+		AB0DEE321950A22C007D149C /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0DEE2C1950A22C007D149C /* Room.swift */; };
+		AB0DEE331950A22C007D149C /* Switch.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0DEE2D1950A22C007D149C /* Switch.swift */; };
 		AB220031194F124F005FD23C /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB220030194F124F005FD23C /* Api.swift */; };
 		ABD0C671194F092A00DE91C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD0C670194F092A00DE91C3 /* AppDelegate.swift */; };
 		ABD0C676194F092A00DE91C3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABD0C675194F092A00DE91C3 /* Images.xcassets */; };
@@ -39,16 +40,17 @@
 /* Begin PBXFileReference section */
 		0982EE4D8E6442629B532215 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB0DEDFB1950104F007D149C /* HomeWizard.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HomeWizard.xcdatamodel; sourceTree = "<group>"; };
-		AB0DEE0F195047FD007D149C /* HomeWizard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeWizard.swift; path = Classes/Models/HomeWizard.swift; sourceTree = "<group>"; };
-		AB0DEE1119505529007D149C /* Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Base.swift; path = Classes/Models/Base.swift; sourceTree = "<group>"; };
-		AB0DEE1319506ED5007D149C /* Switch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Switch.swift; path = Classes/Models/Switch.swift; sourceTree = "<group>"; };
-		AB0DEE1519507141007D149C /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Room.swift; path = Classes/Models/Room.swift; sourceTree = "<group>"; };
 		AB0DEE18195072B2007D149C /* Switch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Switch.swift; path = Classes/HomeWizard/Models/Switch.swift; sourceTree = "<group>"; };
 		AB0DEE1A195074EC007D149C /* Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Base.swift; path = Classes/HomeWizard/Models/Base.swift; sourceTree = "<group>"; };
-		AB0DEE1C19507D74007D149C /* Dimmer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dimmer.swift; path = Classes/Models/Dimmer.swift; sourceTree = "<group>"; };
 		AB0DEE1E19507DCC007D149C /* Dimmer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dimmer.swift; path = Classes/HomeWizard/Models/Dimmer.swift; sourceTree = "<group>"; };
-		AB0DEE2019507FEA007D149C /* Hue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Hue.swift; path = Classes/Models/Hue.swift; sourceTree = "<group>"; };
 		AB0DEE22195080D3007D149C /* Hue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Hue.swift; path = Classes/HomeWizard/Models/Hue.swift; sourceTree = "<group>"; };
+		AB0DEE2419509F38007D149C /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Parser.swift; path = Classes/HomeWizard/Parser.swift; sourceTree = "<group>"; };
+		AB0DEE271950A22C007D149C /* Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
+		AB0DEE281950A22C007D149C /* Dimmer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dimmer.swift; sourceTree = "<group>"; };
+		AB0DEE2A1950A22C007D149C /* HomeWizard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeWizard.swift; sourceTree = "<group>"; };
+		AB0DEE2B1950A22C007D149C /* Hue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hue.swift; sourceTree = "<group>"; };
+		AB0DEE2C1950A22C007D149C /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		AB0DEE2D1950A22C007D149C /* Switch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Switch.swift; sourceTree = "<group>"; };
 		AB22002F194F11D0005FD23C /* HomeWizard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HomeWizard-Bridging-Header.h"; sourceTree = "<group>"; };
 		AB220030194F124F005FD23C /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Api.swift; path = Classes/HomeWizard/Api.swift; sourceTree = "<group>"; };
 		ABD0C66B194F092A00DE91C3 /* HomeWizard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeWizard.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +94,7 @@
 		AB0DEDF91950104E007D149C /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				AB0DEE261950A22C007D149C /* Models */,
 				AB0DEDFA1950104F007D149C /* HomeWizard.xcdatamodeld */,
 			);
 			name = CoreData;
@@ -107,6 +110,27 @@
 				AB0DEE22195080D3007D149C /* Hue.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		AB0DEE261950A22C007D149C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AB0DEE271950A22C007D149C /* Base.swift */,
+				AB0DEE281950A22C007D149C /* Dimmer.swift */,
+				AB0DEE291950A22C007D149C /* Entities */,
+				AB0DEE2A1950A22C007D149C /* HomeWizard.swift */,
+				AB0DEE2B1950A22C007D149C /* Hue.swift */,
+				AB0DEE2C1950A22C007D149C /* Room.swift */,
+				AB0DEE2D1950A22C007D149C /* Switch.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AB0DEE291950A22C007D149C /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 		ABD0C662194F092A00DE91C3 = {
@@ -187,7 +211,6 @@
 			isa = PBXGroup;
 			children = (
 				AB0DEDF91950104E007D149C /* CoreData */,
-				ABD0C693194F0F6600DE91C3 /* Models */,
 				ABD0C692194F0F6000DE91C3 /* HomeWizard */,
 			);
 			name = Classes;
@@ -198,21 +221,9 @@
 			children = (
 				AB0DEE171950728A007D149C /* Models */,
 				AB220030194F124F005FD23C /* Api.swift */,
+				AB0DEE2419509F38007D149C /* Parser.swift */,
 			);
 			name = HomeWizard;
-			sourceTree = "<group>";
-		};
-		ABD0C693194F0F6600DE91C3 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				AB0DEE1119505529007D149C /* Base.swift */,
-				AB0DEE1C19507D74007D149C /* Dimmer.swift */,
-				AB0DEE0F195047FD007D149C /* HomeWizard.swift */,
-				AB0DEE1519507141007D149C /* Room.swift */,
-				AB0DEE1319506ED5007D149C /* Switch.swift */,
-				AB0DEE2019507FEA007D149C /* Hue.swift */,
-			);
-			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,20 +358,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB0DEE1D19507D74007D149C /* Dimmer.swift in Sources */,
+				AB0DEE2F1950A22C007D149C /* Dimmer.swift in Sources */,
+				AB0DEE301950A22C007D149C /* HomeWizard.swift in Sources */,
+				AB0DEE321950A22C007D149C /* Room.swift in Sources */,
 				ABD0C690194F09D600DE91C3 /* SectionViewController.swift in Sources */,
+				AB0DEE2519509F38007D149C /* Parser.swift in Sources */,
+				AB0DEE2E1950A22C007D149C /* Base.swift in Sources */,
 				AB0DEDFC1950104F007D149C /* HomeWizard.xcdatamodeld in Sources */,
+				AB0DEE311950A22C007D149C /* Hue.swift in Sources */,
 				AB0DEE1B195074EC007D149C /* Base.swift in Sources */,
-				AB0DEE1619507141007D149C /* Room.swift in Sources */,
+				AB0DEE331950A22C007D149C /* Switch.swift in Sources */,
 				AB0DEE19195072B2007D149C /* Switch.swift in Sources */,
-				AB0DEE2119507FEA007D149C /* Hue.swift in Sources */,
 				ABD0C671194F092A00DE91C3 /* AppDelegate.swift in Sources */,
 				AB0DEE23195080D3007D149C /* Hue.swift in Sources */,
-				AB0DEE10195047FD007D149C /* HomeWizard.swift in Sources */,
-				AB0DEE1219505529007D149C /* Base.swift in Sources */,
 				AB0DEE1F19507DCC007D149C /* Dimmer.swift in Sources */,
 				AB220031194F124F005FD23C /* Api.swift in Sources */,
-				AB0DEE1419506ED5007D149C /* Switch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
