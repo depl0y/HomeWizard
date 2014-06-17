@@ -7,10 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB0DEDFC1950104F007D149C /* HomeWizard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AB0DEDFA1950104F007D149C /* HomeWizard.xcdatamodeld */; };
+		AB0DEE10195047FD007D149C /* HomeWizard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0DEE0F195047FD007D149C /* HomeWizard.swift */; };
+		AB0DEE1219505529007D149C /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0DEE1119505529007D149C /* Base.swift */; };
+		AB0DEE1419506ED5007D149C /* Switch.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0DEE1319506ED5007D149C /* Switch.swift */; };
+		AB0DEE1619507141007D149C /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0DEE1519507141007D149C /* Room.swift */; };
+		AB0DEE19195072B2007D149C /* Switch.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0DEE18195072B2007D149C /* Switch.swift */; };
+		AB0DEE1B195074EC007D149C /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0DEE1A195074EC007D149C /* Base.swift */; };
+		AB0DEE1D19507D74007D149C /* Dimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0DEE1C19507D74007D149C /* Dimmer.swift */; };
+		AB0DEE1F19507DCC007D149C /* Dimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0DEE1E19507DCC007D149C /* Dimmer.swift */; };
+		AB0DEE2119507FEA007D149C /* Hue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0DEE2019507FEA007D149C /* Hue.swift */; };
+		AB0DEE23195080D3007D149C /* Hue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0DEE22195080D3007D149C /* Hue.swift */; };
+		AB220031194F124F005FD23C /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB220030194F124F005FD23C /* Api.swift */; };
 		ABD0C671194F092A00DE91C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD0C670194F092A00DE91C3 /* AppDelegate.swift */; };
-		ABD0C674194F092A00DE91C3 /* HomeWizard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ABD0C672194F092A00DE91C3 /* HomeWizard.xcdatamodeld */; };
 		ABD0C676194F092A00DE91C3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABD0C675194F092A00DE91C3 /* Images.xcassets */; };
 		ABD0C682194F092A00DE91C3 /* HomeWizardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD0C681194F092A00DE91C3 /* HomeWizardTests.swift */; };
+		ABD0C690194F09D600DE91C3 /* SectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD0C68F194F09D600DE91C3 /* SectionViewController.swift */; };
+		E3B3BAD38EA4482B8D96B6C4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0982EE4D8E6442629B532215 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,14 +37,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0982EE4D8E6442629B532215 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB0DEDFB1950104F007D149C /* HomeWizard.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HomeWizard.xcdatamodel; sourceTree = "<group>"; };
+		AB0DEE0F195047FD007D149C /* HomeWizard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeWizard.swift; path = Classes/Models/HomeWizard.swift; sourceTree = "<group>"; };
+		AB0DEE1119505529007D149C /* Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Base.swift; path = Classes/Models/Base.swift; sourceTree = "<group>"; };
+		AB0DEE1319506ED5007D149C /* Switch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Switch.swift; path = Classes/Models/Switch.swift; sourceTree = "<group>"; };
+		AB0DEE1519507141007D149C /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Room.swift; path = Classes/Models/Room.swift; sourceTree = "<group>"; };
+		AB0DEE18195072B2007D149C /* Switch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Switch.swift; path = Classes/HomeWizard/Models/Switch.swift; sourceTree = "<group>"; };
+		AB0DEE1A195074EC007D149C /* Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Base.swift; path = Classes/HomeWizard/Models/Base.swift; sourceTree = "<group>"; };
+		AB0DEE1C19507D74007D149C /* Dimmer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dimmer.swift; path = Classes/Models/Dimmer.swift; sourceTree = "<group>"; };
+		AB0DEE1E19507DCC007D149C /* Dimmer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dimmer.swift; path = Classes/HomeWizard/Models/Dimmer.swift; sourceTree = "<group>"; };
+		AB0DEE2019507FEA007D149C /* Hue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Hue.swift; path = Classes/Models/Hue.swift; sourceTree = "<group>"; };
+		AB0DEE22195080D3007D149C /* Hue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Hue.swift; path = Classes/HomeWizard/Models/Hue.swift; sourceTree = "<group>"; };
+		AB22002F194F11D0005FD23C /* HomeWizard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HomeWizard-Bridging-Header.h"; sourceTree = "<group>"; };
+		AB220030194F124F005FD23C /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Api.swift; path = Classes/HomeWizard/Api.swift; sourceTree = "<group>"; };
 		ABD0C66B194F092A00DE91C3 /* HomeWizard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeWizard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABD0C66F194F092A00DE91C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABD0C670194F092A00DE91C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ABD0C673194F092A00DE91C3 /* HomeWizard.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HomeWizard.xcdatamodel; sourceTree = "<group>"; };
 		ABD0C675194F092A00DE91C3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		ABD0C67B194F092A00DE91C3 /* HomeWizardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomeWizardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABD0C680194F092A00DE91C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABD0C681194F092A00DE91C3 /* HomeWizardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWizardTests.swift; sourceTree = "<group>"; };
+		ABD0C68F194F09D600DE91C3 /* SectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SectionViewController.swift; path = ViewControllers/SectionViewController/SectionViewController.swift; sourceTree = "<group>"; };
+		F0B3F779605342D3861EFBC9 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3B3BAD38EA4482B8D96B6C4 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,12 +81,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		60F3DF35E87A4ADE9CB41D0E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0982EE4D8E6442629B532215 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB0DEDF91950104E007D149C /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				AB0DEDFA1950104F007D149C /* HomeWizard.xcdatamodeld */,
+			);
+			name = CoreData;
+			path = Classes/CoreData;
+			sourceTree = "<group>";
+		};
+		AB0DEE171950728A007D149C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AB0DEE1A195074EC007D149C /* Base.swift */,
+				AB0DEE1E19507DCC007D149C /* Dimmer.swift */,
+				AB0DEE18195072B2007D149C /* Switch.swift */,
+				AB0DEE22195080D3007D149C /* Hue.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		ABD0C662194F092A00DE91C3 = {
 			isa = PBXGroup;
 			children = (
 				ABD0C66D194F092A00DE91C3 /* HomeWizard */,
 				ABD0C67E194F092A00DE91C3 /* HomeWizardTests */,
 				ABD0C66C194F092A00DE91C3 /* Products */,
+				F0B3F779605342D3861EFBC9 /* Pods.xcconfig */,
+				60F3DF35E87A4ADE9CB41D0E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,10 +132,12 @@
 		ABD0C66D194F092A00DE91C3 /* HomeWizard */ = {
 			isa = PBXGroup;
 			children = (
+				ABD0C691194F0F5900DE91C3 /* Classes */,
+				ABD0C68B194F094100DE91C3 /* ViewControllers */,
 				ABD0C670194F092A00DE91C3 /* AppDelegate.swift */,
 				ABD0C675194F092A00DE91C3 /* Images.xcassets */,
-				ABD0C672194F092A00DE91C3 /* HomeWizard.xcdatamodeld */,
 				ABD0C66E194F092A00DE91C3 /* Supporting Files */,
+				AB22002F194F11D0005FD23C /* HomeWizard-Bridging-Header.h */,
 			);
 			path = HomeWizard;
 			sourceTree = "<group>";
@@ -106,6 +167,54 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		ABD0C68B194F094100DE91C3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				ABD0C68C194F096E00DE91C3 /* SectionViewController */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		ABD0C68C194F096E00DE91C3 /* SectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				ABD0C68F194F09D600DE91C3 /* SectionViewController.swift */,
+			);
+			name = SectionViewController;
+			sourceTree = "<group>";
+		};
+		ABD0C691194F0F5900DE91C3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AB0DEDF91950104E007D149C /* CoreData */,
+				ABD0C693194F0F6600DE91C3 /* Models */,
+				ABD0C692194F0F6000DE91C3 /* HomeWizard */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		ABD0C692194F0F6000DE91C3 /* HomeWizard */ = {
+			isa = PBXGroup;
+			children = (
+				AB0DEE171950728A007D149C /* Models */,
+				AB220030194F124F005FD23C /* Api.swift */,
+			);
+			name = HomeWizard;
+			sourceTree = "<group>";
+		};
+		ABD0C693194F0F6600DE91C3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AB0DEE1119505529007D149C /* Base.swift */,
+				AB0DEE1C19507D74007D149C /* Dimmer.swift */,
+				AB0DEE0F195047FD007D149C /* HomeWizard.swift */,
+				AB0DEE1519507141007D149C /* Room.swift */,
+				AB0DEE1319506ED5007D149C /* Switch.swift */,
+				AB0DEE2019507FEA007D149C /* Hue.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -113,9 +222,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ABD0C685194F092A00DE91C3 /* Build configuration list for PBXNativeTarget "HomeWizard" */;
 			buildPhases = (
+				1E9AB2FEFA8349FEA7992DE4 /* Check Pods Manifest.lock */,
 				ABD0C667194F092A00DE91C3 /* Sources */,
 				ABD0C668194F092A00DE91C3 /* Frameworks */,
 				ABD0C669194F092A00DE91C3 /* Resources */,
+				475B39169A4E4EA8BA4654DC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -198,13 +309,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1E9AB2FEFA8349FEA7992DE4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		475B39169A4E4EA8BA4654DC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ABD0C667194F092A00DE91C3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB0DEE1D19507D74007D149C /* Dimmer.swift in Sources */,
+				ABD0C690194F09D600DE91C3 /* SectionViewController.swift in Sources */,
+				AB0DEDFC1950104F007D149C /* HomeWizard.xcdatamodeld in Sources */,
+				AB0DEE1B195074EC007D149C /* Base.swift in Sources */,
+				AB0DEE1619507141007D149C /* Room.swift in Sources */,
+				AB0DEE19195072B2007D149C /* Switch.swift in Sources */,
+				AB0DEE2119507FEA007D149C /* Hue.swift in Sources */,
 				ABD0C671194F092A00DE91C3 /* AppDelegate.swift in Sources */,
-				ABD0C674194F092A00DE91C3 /* HomeWizard.xcdatamodeld in Sources */,
+				AB0DEE23195080D3007D149C /* Hue.swift in Sources */,
+				AB0DEE10195047FD007D149C /* HomeWizard.swift in Sources */,
+				AB0DEE1219505529007D149C /* Base.swift in Sources */,
+				AB0DEE1F19507DCC007D149C /* Dimmer.swift in Sources */,
+				AB220031194F124F005FD23C /* Api.swift in Sources */,
+				AB0DEE1419506ED5007D149C /* Switch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,23 +464,27 @@
 		};
 		ABD0C686194F092A00DE91C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0B3F779605342D3861EFBC9 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = HomeWizard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HomeWizard/HomeWizard-Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		ABD0C687194F092A00DE91C3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0B3F779605342D3861EFBC9 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = HomeWizard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HomeWizard/HomeWizard-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -383,6 +543,7 @@
 				ABD0C687194F092A00DE91C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ABD0C688194F092A00DE91C3 /* Build configuration list for PBXNativeTarget "HomeWizardTests" */ = {
 			isa = XCConfigurationList;
@@ -391,16 +552,17 @@
 				ABD0C68A194F092A00DE91C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		ABD0C672194F092A00DE91C3 /* HomeWizard.xcdatamodeld */ = {
+		AB0DEDFA1950104F007D149C /* HomeWizard.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				ABD0C673194F092A00DE91C3 /* HomeWizard.xcdatamodel */,
+				AB0DEDFB1950104F007D149C /* HomeWizard.xcdatamodel */,
 			);
-			currentVersion = ABD0C673194F092A00DE91C3 /* HomeWizard.xcdatamodel */;
+			currentVersion = AB0DEDFB1950104F007D149C /* HomeWizard.xcdatamodel */;
 			path = HomeWizard.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

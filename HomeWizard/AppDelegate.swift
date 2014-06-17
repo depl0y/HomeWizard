@@ -20,6 +20,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		// Override point for customization after application launch.
 		self.window!.backgroundColor = UIColor.whiteColor()
 		self.window!.makeKeyAndVisible()
+		
+		var sectionViewController = SectionViewController()
+		self.window!.rootViewController = sectionViewController;
+		
 		return true
 	}
 

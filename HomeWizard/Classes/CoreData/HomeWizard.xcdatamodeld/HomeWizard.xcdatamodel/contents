@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6172.12" systemVersion="13D65" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Base" representedClassName="Base" isAbstract="YES" syncable="YES">
+        <attribute name="favorite" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="lastUpdate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="homeWizard" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HomeWizard" inverseName="sensors" inverseEntity="HomeWizard" syncable="YES"/>
+        <relationship name="room" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Room" inverseName="sensors" inverseEntity="Room" syncable="YES"/>
+    </entity>
+    <entity name="Dimmer" parentEntity="Switch" syncable="YES">
+        <attribute name="dimLevel" optional="YES" attributeType="Integer 32" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="tapLevel" optional="YES" attributeType="Integer 32" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="HomeWizard" representedClassName="HomeWizard" syncable="YES">
+        <attribute name="hostname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="version" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="sensors" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Base" inverseName="homeWizard" inverseEntity="Base" syncable="YES"/>
+    </entity>
+    <entity name="Hue" parentEntity="Base" syncable="YES">
+        <attribute name="bri" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="hue" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="hueId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="lightId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="sat" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Room" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="sensors" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Base" inverseName="room" inverseEntity="Base" syncable="YES"/>
+    </entity>
+    <entity name="Switch" representedClassName="Switch" parentEntity="Base" syncable="YES">
+        <attribute name="status" optional="YES" attributeType="Boolean" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="HomeWizard" positionX="-63" positionY="-18" width="128" height="103"/>
+        <element name="Base" positionX="-63" positionY="0" width="128" height="133"/>
+        <element name="Switch" positionX="-45" positionY="45" width="128" height="58"/>
+        <element name="Room" positionX="-36" positionY="54" width="128" height="73"/>
+        <element name="Dimmer" positionX="-18" positionY="72" width="128" height="73"/>
+        <element name="Hue" positionX="0" positionY="81" width="128" height="118"/>
+    </elements>
+</model>
