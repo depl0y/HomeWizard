@@ -18,7 +18,12 @@ class Parser: NSObject {
 				
 				for dict in switches {
 					
-					
+					if (dict.objectForKey("type") as String == "switch") {
+
+					}
+					else if (dict.objectForKey("type") as String == "dimmer") {
+						
+					}
 					
 				}
 				

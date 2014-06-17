@@ -19,7 +19,10 @@
 		AB0DEE311950A22C007D149C /* Hue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0DEE2B1950A22C007D149C /* Hue.swift */; };
 		AB0DEE321950A22C007D149C /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0DEE2C1950A22C007D149C /* Room.swift */; };
 		AB0DEE331950A22C007D149C /* Switch.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0DEE2D1950A22C007D149C /* Switch.swift */; };
+		AB0DEE351950A5CA007D149C /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0DEE341950A5CA007D149C /* DataManager.swift */; };
 		AB220031194F124F005FD23C /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB220030194F124F005FD23C /* Api.swift */; };
+		AB7BE22F1950B41C00831B0A /* NSManagedObject+Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7BE22E1950B41C00831B0A /* NSManagedObject+Query.swift */; };
+		AB7BE2321950B7B900831B0A /* NSManagedObject+Fetching.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7BE2311950B7B900831B0A /* NSManagedObject+Fetching.m */; };
 		ABD0C671194F092A00DE91C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD0C670194F092A00DE91C3 /* AppDelegate.swift */; };
 		ABD0C676194F092A00DE91C3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABD0C675194F092A00DE91C3 /* Images.xcassets */; };
 		ABD0C682194F092A00DE91C3 /* HomeWizardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD0C681194F092A00DE91C3 /* HomeWizardTests.swift */; };
@@ -51,8 +54,12 @@
 		AB0DEE2B1950A22C007D149C /* Hue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hue.swift; sourceTree = "<group>"; };
 		AB0DEE2C1950A22C007D149C /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		AB0DEE2D1950A22C007D149C /* Switch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Switch.swift; sourceTree = "<group>"; };
+		AB0DEE341950A5CA007D149C /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		AB22002F194F11D0005FD23C /* HomeWizard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HomeWizard-Bridging-Header.h"; sourceTree = "<group>"; };
 		AB220030194F124F005FD23C /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Api.swift; path = Classes/HomeWizard/Api.swift; sourceTree = "<group>"; };
+		AB7BE22E1950B41C00831B0A /* NSManagedObject+Query.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSManagedObject+Query.swift"; path = "Extensions/NSManagedObject+Query.swift"; sourceTree = "<group>"; };
+		AB7BE2301950B7B900831B0A /* NSManagedObject+Fetching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+Fetching.h"; path = "Extensions/NSManagedObject+Fetching.h"; sourceTree = "<group>"; };
+		AB7BE2311950B7B900831B0A /* NSManagedObject+Fetching.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+Fetching.m"; path = "Extensions/NSManagedObject+Fetching.m"; sourceTree = "<group>"; };
 		ABD0C66B194F092A00DE91C3 /* HomeWizard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeWizard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABD0C66F194F092A00DE91C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABD0C670194F092A00DE91C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -94,8 +101,10 @@
 		AB0DEDF91950104E007D149C /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				AB7BE22D1950B3DD00831B0A /* Extensions */,
 				AB0DEE261950A22C007D149C /* Models */,
 				AB0DEDFA1950104F007D149C /* HomeWizard.xcdatamodeld */,
+				AB0DEE341950A5CA007D149C /* DataManager.swift */,
 			);
 			name = CoreData;
 			path = Classes/CoreData;
@@ -117,7 +126,6 @@
 			children = (
 				AB0DEE271950A22C007D149C /* Base.swift */,
 				AB0DEE281950A22C007D149C /* Dimmer.swift */,
-				AB0DEE291950A22C007D149C /* Entities */,
 				AB0DEE2A1950A22C007D149C /* HomeWizard.swift */,
 				AB0DEE2B1950A22C007D149C /* Hue.swift */,
 				AB0DEE2C1950A22C007D149C /* Room.swift */,
@@ -126,11 +134,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		AB0DEE291950A22C007D149C /* Entities */ = {
+		AB7BE22D1950B3DD00831B0A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				AB7BE2301950B7B900831B0A /* NSManagedObject+Fetching.h */,
+				AB7BE2311950B7B900831B0A /* NSManagedObject+Fetching.m */,
+				AB7BE22E1950B41C00831B0A /* NSManagedObject+Query.swift */,
 			);
-			path = Entities;
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		ABD0C662194F092A00DE91C3 = {
@@ -359,6 +370,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB0DEE2F1950A22C007D149C /* Dimmer.swift in Sources */,
+				AB7BE22F1950B41C00831B0A /* NSManagedObject+Query.swift in Sources */,
+				AB0DEE351950A5CA007D149C /* DataManager.swift in Sources */,
 				AB0DEE301950A22C007D149C /* HomeWizard.swift in Sources */,
 				AB0DEE321950A22C007D149C /* Room.swift in Sources */,
 				ABD0C690194F09D600DE91C3 /* SectionViewController.swift in Sources */,
@@ -373,6 +386,7 @@
 				AB0DEE23195080D3007D149C /* Hue.swift in Sources */,
 				AB0DEE1F19507DCC007D149C /* Dimmer.swift in Sources */,
 				AB220031194F124F005FD23C /* Api.swift in Sources */,
+				AB7BE2321950B7B900831B0A /* NSManagedObject+Fetching.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

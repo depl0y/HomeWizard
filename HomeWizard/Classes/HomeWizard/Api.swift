@@ -86,18 +86,21 @@ class Api: NSObject {
 		
 		manager.GET(url, parameters: nil, success: { (operation: AFHTTPRequestOperation!, responseObject: AnyObject!) in
 			
-			println(responseObject.description)
-			var dict: NSDictionary = responseObject as NSDictionary
+				println(responseObject.description)
+				
+				if let dictionary = responseObject as? NSDictionary {
+					if (dictionary.objectForKey("error")) {
+						completed(success: false)
+					}
+					else {
+						Parser.getSensors(dictionary)
+					}
 
-			
+				}
+				else {
+					completed(success: false)
+				}
 
-			if (dict.objectForKey("error")) {
-				completed(success: false)
-			}
-			else {
-				completed(success: true)
-			}
-			
 			},
 			failure: { (operation: AFHTTPRequestOperation!, error: NSError!) in
 				println("Error: " + error.localizedDescription)

@@ -7,3 +7,4 @@
 //
 
 #import <AFNetworking/AFNetworking.h>
+#import "NSManagedObject+Fetching.h"
